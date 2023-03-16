@@ -10,7 +10,10 @@
           "-X",
           "dev"
         ]
-			}
+			},
+			"extensions": [
+				"ms-python.python"
+			]
 		}
   },
   "onCreateCommand": "sudo chmod +x .devcontainer/on-create-command.sh && .devcontainer/on-create-command.sh"
