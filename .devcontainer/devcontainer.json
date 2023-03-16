@@ -4,16 +4,14 @@
   "customizations": {
     "vscode": {
       "settings": {
+        "terminal.integrated.environmentChangesRelaunch": false,
 				"python.defaultInterpreterPath": "${workspaceFolder}/.venv",
         "python.terminal.activateEnvInCurrentTerminal": true,
         "python.terminal.launchArgs": [
           "-X",
           "dev"
         ]
-			},
-			"extensions": [
-				"ms-python.python"
-			]
+			}
 		}
   },
   "onCreateCommand": "sudo chmod +x .devcontainer/on-create-command.sh && .devcontainer/on-create-command.sh"
