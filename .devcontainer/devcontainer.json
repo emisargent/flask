@@ -1,18 +1,21 @@
 {
-	"name": "pallets/flask",
-  "image": "mcr.microsoft.com/devcontainers/python:3",
+  "name": "pallets/flask",
+  "image": "mcr.microsoft.com/devcontainers/universal:linux",
   "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
     "vscode": {
       "settings": {
-        "terminal.integrated.environmentChangesRelaunch": false,
-				"python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
         "python.terminal.activateEnvInCurrentTerminal": true,
         "python.terminal.launchArgs": [
           "-X",
           "dev"
-        ]
-			}
-		}
+        ],
+        "terminal.integrated.environmentChangesRelaunch": false
+      }
+    }
   },
   "onCreateCommand": "sudo chmod +x .devcontainer/on-create-command.sh && .devcontainer/on-create-command.sh"
 }
