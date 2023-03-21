@@ -82,11 +82,12 @@ dependencies for you.
 -   Wait for the codespace to load and the ``postCreateCommand`` to
     finish running.
 -   Run the following command to activate the python virtualenv.
--   Checkout a branch and `start coding`_.
 
     .. code-block:: text
 
         $ . .venv/bin/activate
+
+-   Checkout a branch and `start coding`_.
 
 .. _GitHub Codespaces: https://docs.github.com/en/codespaces
 .. _devcontainer: https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
@@ -193,18 +194,14 @@ Start coding
 
         .. code-block:: text
 
-            You don't have write access to the pallets/flask repository,
-            so you cannot push changes to it.
-            To obtain write access we will point this codespace at your
-            fork of pallets/flask, creating that fork if it doesn't exist.
+            You don't have write access to the pallets/flask repository, so you cannot push changes to it.
+            To obtain write access we will point this codespace at your fork of pallets/flask, creating that fork if it doesn't exist.
 
             Would you like to proceed?
 
-        Enter ``Y`` at the command prompt to create a new fork or push to
-        your existing fork.
-
-        This will name your remote fork ``origin`` and rename
-        pallets/flask to ``upstream``.
+        Enter ``Y`` at the command prompt to create a new fork or push
+        to your existing fork. This will name your remote fork ``origin``
+        and rename pallets/flask to ``upstream``.
 
 -   Include tests that cover any code changes you make. Make sure the
     test fails without your patch. Run the tests as described below.
@@ -214,15 +211,15 @@ Start coding
 
     - Local development
 
-        .. code-block:: text
+      .. code-block:: text
 
-            $ git push --set-upstream fork your-branch-name
+        $ git push --set-upstream fork your-branch-name
 
     - GitHub Codespaces
 
-        .. code-block:: text
+      .. code-block:: text
 
-            $ git push --set-upstream origin your-branch-name
+        $ git push --set-upstream origin your-branch-name
 
 .. _committing as you go: https://afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html#commit-your-changes
 .. _create a fork: https://docs.github.com/en/codespaces/developing-in-codespaces/using-source-control-in-your-codespace#about-automatic-forking
